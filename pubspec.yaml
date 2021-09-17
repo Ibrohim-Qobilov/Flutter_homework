@@ -57,6 +57,8 @@ flutter:
     - assets/images/homework4/
     - assets/images/homework5/
     - assets/images/homework11/images/
+    - assets/images/homework13/
+    - assets/images/homework15/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

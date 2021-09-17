@@ -10,6 +10,9 @@ import 'package:allhomework/home_work_9/main.dart';
 import 'package:allhomework/home_work_10/main.dart';
 import 'package:allhomework/home_work_11/main_page.dart';
 import 'package:allhomework/home_work_12/screens/main.dart';
+import 'package:allhomework/home_work_13/main.dart';
+import 'package:allhomework/home_work_14/main.dart';
+import 'package:allhomework/home_work_15/main.dart';
 import 'package:flutter/material.dart';
 
 class AllPage extends StatelessWidget {
@@ -173,7 +176,7 @@ class AllPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => MainPage(),
+                        builder: (context) => LoginPage(),
                       ),
                     );
                   },
@@ -194,6 +197,54 @@ class AllPage extends StatelessWidget {
                     );
                   },
                   child: Text("Uy ishi 12"),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                height: 50,
+                width: 350,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Dars19Page(),
+                      ),
+                    );
+                  },
+                  child: Text("Uy ishi 13"),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                height: 50,
+                width: 350,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Dars20Oyin(),
+                      ),
+                    );
+                  },
+                  child: Text("Uy ishi 14"),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                height: 50,
+                width: 350,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => WaterMainPage(),
+                      ),
+                    );
+                  },
+                  child: Text("Uy ishi 15"),
                 ),
               ),
               SizedBox(height: 20,),
