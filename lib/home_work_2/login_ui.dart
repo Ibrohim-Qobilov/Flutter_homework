@@ -28,8 +28,11 @@ class _LoginUiState extends State<LoginUi> {
                     padding: const EdgeInsets.only(left: 300),
                     child: Text(
                       "Log in",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30,
+                        color: Colors.white,
+                      ),
                     ),
                   )),
             ),
@@ -87,32 +90,12 @@ class _LoginUiState extends State<LoginUi> {
                         ),
                       ),
                     ),
-                    // Padding(
-                    //   padding: const EdgeInsets.all(8.0),
-                    //   child: Container(
-                    //     alignment: Alignment(-0.6, -0.5),
-                    //     margin: EdgeInsets.only(right: 110),
-                    //     height: 50,
-                    //     width: 200,
-                    //     color: Colors.black54,
-                    //     child: Padding(
-                    //       padding: const EdgeInsets.all(10),
-
-                    //       child: Text(
-
-                    //         "Go Shopping",
-                    //         style: TextStyle(color: Colors.white, fontSize: 25)
-                    //         ,
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
                     Padding(
                       padding: const EdgeInsets.only(right: 150),
                       child: Container(
                         margin: EdgeInsets.only(top: 20),
-                        height: 40,
-                        width: 150,
+                        height: 50,
+                        width: 190,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                               primary: Colors.grey[700]),

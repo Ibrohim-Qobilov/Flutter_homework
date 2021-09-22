@@ -1,4 +1,5 @@
 import 'package:allhomework/home_work_1/pages.dart';
+import 'package:allhomework/home_work_16/car_shop_main.dart';
 import 'package:allhomework/home_work_2/login_ui.dart';
 import 'package:allhomework/home_work_3/uyga_ui_3.dart';
 import 'package:allhomework/home_work_4/sport/main.dart';
@@ -248,7 +249,22 @@ class AllPage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20,),
-              
+              Container(
+                height: 50,
+                width: 350,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CarShopMain(),
+                      ),
+                    );
+                  },
+                  child: Text("Uy ishi 16"),
+                ),
+              ),
+              SizedBox(height: 20,),
             ],
           ),
         ),

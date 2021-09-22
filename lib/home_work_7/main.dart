@@ -3,7 +3,6 @@ import 'package:allhomework/home_work_7/food_model.dart';
 import 'package:allhomework/home_work_7/horizontal.dart';
 import 'package:flutter/material.dart';
 
-
 class FoodListPage extends StatelessWidget {
   var _context;
   var _size;
@@ -26,24 +25,17 @@ class FoodListPage extends StatelessWidget {
       ],
     );
   }
- 
+
   _sliverAppBar() => SliverAppBar(
         stretch: true,
         floating: true,
-       
         expandedHeight: _size.height * 0.5,
         backgroundColor: Colors.white,
         flexibleSpace: FlexibleSpaceBar(
-         
           title: _appBarTitle(),
           centerTitle: true,
-
-       
           stretchModes: [
-            
             StretchMode.blurBackground,
-
-           
             StretchMode.fadeTitle,
             StretchMode.zoomBackground
           ],
@@ -54,32 +46,35 @@ class FoodListPage extends StatelessWidget {
         ),
       );
 
-  
   _appBarTitle() => Container(
-       
         padding: EdgeInsets.symmetric(horizontal: 16.0),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            
             Expanded(
-              child: Text.rich(TextSpan(children: [
+              child: Text.rich(
                 TextSpan(
-                  text: "Evos \n",
-                  style: TextStyle(fontSize: 16.0, color: Colors.black, ),
+                  children: [
+                    TextSpan(
+                      text: "Evos \n",
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "Juda mazzalik Taomlar markazi",
+                      style: TextStyle(
+                        fontSize: 9.0,
+                        fontWeight: FontWeight.w400,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
                 ),
-                TextSpan(
-                  text: "Juda mazzalik Taomlar markazi",
-                  style: TextStyle(
-                    fontSize: 9.0,
-                    fontWeight: FontWeight.w400,
-                    color: Colors.black,
-                  ),
-                ),
-              ])),
+              ),
             ),
-
             FloatingActionButton(
               onPressed: () {
                 Navigator.push(
@@ -95,20 +90,16 @@ class FoodListPage extends StatelessWidget {
         ),
       );
 
-
   _showSliverListWithFoods() => SliverList(
           delegate: SliverChildListDelegate(
         foodList.map((food) => _getFoodInfoTemplate(food)).toList(),
       ));
 
- 
   Widget _getFoodInfoTemplate(Food food) => Container(
         height: _size.width * 0.32,
         padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 6.0),
         child: Row(
           children: [
-
-            
             Container(
               height: _size.width * 0.28,
               width: _size.width * 0.28,
@@ -177,9 +168,7 @@ class FoodListPage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(primary: Colors.red),
               ),
               ElevatedButton(
-                onPressed: () {
-                 
-                },
+                onPressed: () {},
                 child: Text("Yes"),
                 style: ElevatedButton.styleFrom(primary: Colors.green),
               ),
@@ -187,5 +176,4 @@ class FoodListPage extends StatelessWidget {
           );
         });
   }
-
 }

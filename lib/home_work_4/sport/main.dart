@@ -56,7 +56,7 @@ class _SportMenPageState extends State<SportMenPage> {
                         ],
                       ),
                       CircleAvatar(
-                        radius: 34.0,
+                        radius: 30.0,
                         backgroundColor: Colors.indigo,
                         backgroundImage:
                             AssetImage("assets/images/homework4/money.png"),

@@ -10,10 +10,7 @@ class CoursesPage extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          
           _showSliverAppBar(),
-
-        
           _showSliverList(_size),
         ],
       ),
@@ -62,13 +59,8 @@ class CoursesPage extends StatelessWidget {
   _showSliverList(sze) => SliverList(
         delegate: SliverChildListDelegate(
           [
-            
             _header(),
-
-            
             _setPopularCoursesText(),
-
-            
             _footer(),
           ],
         ),
@@ -80,7 +72,7 @@ class CoursesPage extends StatelessWidget {
         width: _size.width * 1.0,
         height: _size.height * 0.2,
         child: ListView.builder(
-            itemCount: 15,
+            itemCount: 5,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return Container(
@@ -95,7 +87,7 @@ class CoursesPage extends StatelessWidget {
                         "https://source.unsplash.com/random/$index",
                       ),
                     ),
-                    borderRadius: BorderRadius.circular(6.0)),
+                    borderRadius: BorderRadius.circular(20.0)),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -203,7 +195,7 @@ class CoursesPage extends StatelessWidget {
     BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
     BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "Heart"),
     BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
-    BottomNavigationBarItem(icon: Icon(Icons.copy), label: "List"),
-    BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings"),
+    BottomNavigationBarItem(icon: Icon(Icons.copy_all), label: "List"),
+    BottomNavigationBarItem(icon: Icon(Icons.settings_applications_outlined), label: "Settings"),
   ];
 }

@@ -14,15 +14,16 @@ class _UygaUiPageUchState extends State<UygaUiPageUch> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
+        leading: Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+            ),
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Icon(
-              Icons.arrow_back,
-              color: Colors.black,
-            ),
+            Text(""),
             Text(
               "RPRESENT",
               style: TextStyle(color: Colors.black),

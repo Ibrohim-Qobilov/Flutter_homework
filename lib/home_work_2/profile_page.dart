@@ -113,6 +113,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 width: 300,
                 child: Text("Discover new styles", style: TextStyle(fontSize: 20),),
               ),
+              
               Padding(
                 padding: const EdgeInsets.only(top: 80),
                 child: Row(

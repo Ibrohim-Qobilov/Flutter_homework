@@ -38,7 +38,7 @@ class _MainPagePageState extends State<MainPagePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Bast Avto Shop in Tashkent",
+                "Best Avto Shop in Tashkent",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,

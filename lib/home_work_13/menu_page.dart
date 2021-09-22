@@ -30,7 +30,7 @@ class _MainPageState extends State<MainPage> {
   _getSliverAppBar() => SliverAppBar(
         backgroundColor: Colors.deepOrange,
         bottom: PreferredSize(
-          preferredSize: Size(_size.width, _size.height * 0.25),
+          preferredSize: Size(_size.width, _size.height * 0.5),
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Column(
