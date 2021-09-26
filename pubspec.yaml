@@ -37,6 +37,9 @@ dev_dependencies:
   awesome_dialog: ^2.1.1
   fluttertoast: ^8.0.8
   badges: ^2.0.1
+  font_awesome_flutter: ^9.1.0
+  
+
   
 
 # For information on the generic Dart part of this file, see the
@@ -60,6 +63,8 @@ flutter:
     - assets/images/homework13/
     - assets/images/homework15/
     - assets/images/homework16/
+    - assets/images/homework17/
+    - assets/images/homework18/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -79,9 +84,9 @@ flutter:
         - asset: assets/fonts/homework16/homework16.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
+    - family: homework17
+      fonts:
+        - asset: assets/fonts/homework17/homework17.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #

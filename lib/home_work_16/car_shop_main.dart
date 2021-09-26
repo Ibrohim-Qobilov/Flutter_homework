@@ -203,7 +203,7 @@ class CarShopMain extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        "Interfae",
+                        "Interface",
                         style: TextStyle(fontSize: 18),
                       ),
                     ],

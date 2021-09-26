@@ -1,5 +1,7 @@
 import 'package:allhomework/home_work_1/pages.dart';
 import 'package:allhomework/home_work_16/car_shop_main.dart';
+import 'package:allhomework/home_work_17/barbershop_main.dart';
+import 'package:allhomework/home_work_18/screens/splash.dart';
 import 'package:allhomework/home_work_2/login_ui.dart';
 import 'package:allhomework/home_work_3/uyga_ui_3.dart';
 import 'package:allhomework/home_work_4/sport/main.dart';
@@ -213,7 +215,7 @@ class AllPage extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Text("Uy ishi 13"),
+                  child: Text("Uy ishi 13 Order food"),
                 ),
               ),
               SizedBox(height: 20,),
@@ -229,7 +231,7 @@ class AllPage extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Text("Uy ishi 14"),
+                  child: Text("Uy ishi 14 son top"),
                 ),
               ),
               SizedBox(height: 20,),
@@ -245,7 +247,7 @@ class AllPage extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Text("Uy ishi 15"),
+                  child: Text("Uy ishi 15 Water shop"),
                 ),
               ),
               SizedBox(height: 20,),
@@ -261,7 +263,39 @@ class AllPage extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Text("Uy ishi 16"),
+                  child: Text("Uy ishi 16 Car shop"),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                height: 50,
+                width: 350,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => BarBerShopMainPage(),
+                      ),
+                    );
+                  },
+                  child: Text("Uy ishi 17 Barber shop"),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                height: 50,
+                width: 350,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => BookingHotelSplashScreen(),
+                      ),
+                    );
+                  },
+                  child: Text("Uy ishi 18 Otel"),
                 ),
               ),
               SizedBox(height: 20,),
