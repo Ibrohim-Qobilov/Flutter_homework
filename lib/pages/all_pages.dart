@@ -2,7 +2,11 @@ import 'package:allhomework/home_work_1/pages.dart';
 import 'package:allhomework/home_work_16/car_shop_main.dart';
 import 'package:allhomework/home_work_17/barbershop_main.dart';
 import 'package:allhomework/home_work_18/screens/splash.dart';
+import 'package:allhomework/home_work_19/botton_nar_bar.dart';
 import 'package:allhomework/home_work_2/login_ui.dart';
+import 'package:allhomework/home_work_20/other.dart';
+import 'package:allhomework/home_work_21/bottom_navigation_bar_page.dart';
+import 'package:allhomework/home_work_21/coffee_bar/main_page.dart';
 import 'package:allhomework/home_work_3/uyga_ui_3.dart';
 import 'package:allhomework/home_work_4/sport/main.dart';
 import 'package:allhomework/home_work_5/main.dart';
@@ -296,6 +300,70 @@ class AllPage extends StatelessWidget {
                     );
                   },
                   child: Text("Uy ishi 18 Otel"),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                height: 50,
+                width: 350,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ChatBottomNavigatorBarPage(),
+                      ),
+                    );
+                  },
+                  child: Text("Uy ishi 19 Chat"),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                height: 50,
+                width: 350,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => OtherPage(),
+                      ),
+                    );
+                  },
+                  child: Text("Uy ishi 20"),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                height: 50,
+                width: 350,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => BottomNavigationBarPage(),
+                      ),
+                    );
+                  },
+                  child: Text("Fashion App"),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                height: 50,
+                width: 350,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CoffeeMainPage(),
+                      ),
+                    );
+                  },
+                  child: Text("Coffee Bar App"),
                 ),
               ),
               SizedBox(height: 20,),
