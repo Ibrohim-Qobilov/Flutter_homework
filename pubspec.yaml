@@ -40,6 +40,9 @@ dev_dependencies:
   font_awesome_flutter: ^9.1.0
   flutter_svg: ^0.22.0
   fluid_bottom_nav_bar: ^1.3.0
+  card_swiper: ^1.0.2
+  delayed_display: ^2.0.0
+  flutter_staggered_grid_view: ^0.4.0
   
 
   
@@ -69,7 +72,10 @@ flutter:
     - assets/images/homework18/
     - assets/icons/homework19/
     - assets/images/coffee_shop/
-  #   - images/a_dot_ham.jpeg
+    - assets/images/kema_shop/
+    - assets/images/coffee/
+    - assets/images/furniture/
+    - assets/images/mario/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -91,6 +97,18 @@ flutter:
     - family: homework17
       fonts:
         - asset: assets/fonts/homework17/homework17.ttf
+  # fonts:
+    - family: ExternalIcons
+      fonts:
+        - asset: assets/fonts/kema_shop/ExternalIcons.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #

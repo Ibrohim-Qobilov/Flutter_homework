@@ -1,4 +1,5 @@
-import 'package:allhomework/pages/all_pages.dart';
+
+import 'package:allhomework/pages/ui/list_pages.dart';
 import 'package:flutter/material.dart';
 
 
@@ -15,12 +16,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Home Works',
       theme: ThemeData(
-        
+        accentColor: Color(0xFFffac1b),
+        primaryColor: Color(0xFF1a5cdb),
+        disabledColor: Color(0xFFf4f1fd),
+        buttonColor: Color(0xFF3b3d41),
         primarySwatch: Colors.blue,
+        
       ),
-      // home: ProfilePage(),
-      // home: LoginUi(),
-      home: AllPage(),
+     
+      home: PagesList(),
     );
   }
 }
