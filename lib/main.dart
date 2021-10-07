@@ -1,5 +1,5 @@
 
-import 'package:allhomework/pages/ui/list_pages.dart';
+import 'package:allhomework/pages_info/ui/list_pages.dart';
 import 'package:flutter/material.dart';
 
 
