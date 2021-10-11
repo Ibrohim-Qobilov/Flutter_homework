@@ -21,7 +21,10 @@ class _PhotoPageState extends State<PhotoPage> {
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: Text("Valyuta kursi",style: TextStyle(color: Colors.black),),
+        title: Text(
+          "Valyuta kursi",
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: Center(
         child: FutureBuilder(
@@ -44,12 +47,13 @@ class _PhotoPageState extends State<PhotoPage> {
                             ),
                           ),
                         ),
-                        title: Text(data![index].title!),
+                        title: Text(data[index].title!),
                         subtitle: Text(data[index].date!),
                         trailing: Column(
                           children: [
                             Text(data[index].code!),
-                            Text(valyuta.cbPrice!)
+                            Text(valyuta.cbPrice!),
+                            // Text(valyuta.nbuBuyPrice!),
                           ],
                         ),
                       );

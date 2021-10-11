@@ -27,6 +27,7 @@ class FurnitureShopMainPage extends StatelessWidget {
         backgroundColor: _orange,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
+            
             bottomLeft: Radius.circular(32.0),
             bottomRight: Radius.circular(32.0),
           ),
@@ -34,7 +35,7 @@ class FurnitureShopMainPage extends StatelessWidget {
         bottom: PreferredSize(
           preferredSize: Size(_size.width, _size.height * 0.17),
           child: Transform.translate(
-            offset: Offset(0.0, 20.0),
+            offset: Offset(0.0, 24.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

@@ -25,6 +25,7 @@ import 'package:allhomework/pages/home_work_9/main.dart';
 import 'package:allhomework/pages/instagram/ui/splash_screen.dart';
 import 'package:allhomework/pages/kema_shop/views/home_page.dart';
 import 'package:allhomework/pages/mario/main.dart';
+import 'package:allhomework/pages/taqvim/screens/bottom_nav_bar.dart';
 import 'package:allhomework/pages/telegram/main.dart';
 import 'package:allhomework/pages/tic_tac_toe/main.dart';
 import 'package:allhomework/pages/valyuta_kurslari/main.dart';
@@ -288,7 +289,6 @@ List<PageUI> pageList = [
     GamesPage(),
     "",
   ),
-  
   new PageUI(
     "Valyuta",
     "Uy ishi 28",
@@ -299,6 +299,14 @@ List<PageUI> pageList = [
     PhotoPage(),
     "",
   ),
-  
-  
+  new PageUI(
+    "Taqvim",
+    "Uy ishi 29",
+    "08-10-2021",
+    "",
+    Icon(Icons.school_sharp),
+    // TicTacTorGamePage(),
+    PrayerBottomNavigatorBarPage(),
+    "",
+  ),
 ];
