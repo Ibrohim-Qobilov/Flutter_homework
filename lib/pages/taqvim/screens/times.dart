@@ -29,7 +29,7 @@ class _PrayerTimeState extends State<PrayerTime> {
                 ? ListView(
                     scrollDirection: Axis.vertical,
                     children: [
-                      _setTime("Bomdod" , vaqti.timings!.fajr),
+                      _setTime("Bomdod" , vaqti.timings.fajr),
                       _setTime("Quyosh", vaqti.timings.sunrise),
                       _setTime("Peshin", vaqti.timings.dhuhr),
                       _setTime("Asr", vaqti.timings.asr),

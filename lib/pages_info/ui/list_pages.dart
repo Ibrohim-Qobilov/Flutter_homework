@@ -1,5 +1,3 @@
-
-
 import 'package:allhomework/pages_info/data/list_pages.dart';
 import 'package:allhomework/pages_info/model/page.dart';
 import 'package:flutter/material.dart';

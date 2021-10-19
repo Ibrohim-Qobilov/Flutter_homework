@@ -1,4 +1,4 @@
-
+import 'package:allhomework/pages/car_json/screens/main.dart';
 import 'package:allhomework/pages/furniture_shop/main.dart';
 import 'package:allhomework/pages/games/main.dart';
 import 'package:allhomework/pages/home_work_1/pages.dart';
@@ -25,6 +25,8 @@ import 'package:allhomework/pages/home_work_9/main.dart';
 import 'package:allhomework/pages/instagram/ui/splash_screen.dart';
 import 'package:allhomework/pages/kema_shop/views/home_page.dart';
 import 'package:allhomework/pages/mario/main.dart';
+import 'package:allhomework/pages/music_ui/pages/music_ui_page.dart';
+import 'package:allhomework/pages/music_ui/pages/music_ui_page.dart';
 import 'package:allhomework/pages/taqvim/screens/bottom_nav_bar.dart';
 import 'package:allhomework/pages/telegram/main.dart';
 import 'package:allhomework/pages/tic_tac_toe/main.dart';
@@ -309,4 +311,22 @@ List<PageUI> pageList = [
     PrayerBottomNavigatorBarPage(),
     "",
   ),
+  new PageUI(
+    "Music Ui api",
+    "Uy ishi 30",
+    "12-10-2021",
+    "",
+    Icon(Icons.music_note),
+    MusicUIPage(),
+    "",
+  ),
+  new PageUI(
+    "Car api",
+    "uy ishi 31",
+    "14-10-2021",
+    "",
+    Icon(CupertinoIcons.car),
+    CarJson(),
+    "",
+  )
 ];
