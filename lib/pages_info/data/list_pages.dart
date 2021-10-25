@@ -26,7 +26,6 @@ import 'package:allhomework/pages/instagram/ui/splash_screen.dart';
 import 'package:allhomework/pages/kema_shop/views/home_page.dart';
 import 'package:allhomework/pages/mario/main.dart';
 import 'package:allhomework/pages/music_ui/pages/music_ui_page.dart';
-import 'package:allhomework/pages/music_ui/pages/music_ui_page.dart';
 import 'package:allhomework/pages/taqvim/screens/bottom_nav_bar.dart';
 import 'package:allhomework/pages/telegram/main.dart';
 import 'package:allhomework/pages/tic_tac_toe/main.dart';
@@ -74,7 +73,7 @@ List<PageUI> pageList = [
     "",
   ),
   new PageUI(
-    "Srearch images",
+    "Sreach images",
     "Uy ishi 5",
     "06.09.2021",
     "",

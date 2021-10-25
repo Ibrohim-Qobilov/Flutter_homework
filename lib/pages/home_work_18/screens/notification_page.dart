@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HotelNotificationPage extends StatelessWidget {
+  PageStorageKey pageStrKey = PageStorageKey("key1");
+  PageStorageBucket pageStrBucket = PageStorageBucket();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +18,9 @@ class HotelNotificationPage extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            _friendsAvatar(),
+            PageStorage(
+              bucket: pageStrBucket,
+              child: _friendsAvatar()),
             SizedBox(
               height: 10,
             ),
@@ -72,6 +76,7 @@ class HotelNotificationPage extends StatelessWidget {
     return Container(
       height: 70,
       child: ListView(
+        key: pageStrKey,
         scrollDirection: Axis.horizontal,
         children: [
           CircleAvatar(

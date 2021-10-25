@@ -9,7 +9,8 @@ class HotelMyTripPage extends StatefulWidget {
 
 class _HotelMyTripPageState extends State<HotelMyTripPage> {
   var radius;
-
+  PageStorageKey pageStrKey = PageStorageKey("key1");
+  PageStorageBucket pageStrBucket = PageStorageBucket();
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -122,131 +123,18 @@ class _HotelMyTripPageState extends State<HotelMyTripPage> {
     return Column(
       children: [
         Expanded(
-          child: GridView.builder(
-            gridDelegate:
-                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
-            itemBuilder: (context, index) {
-              if (index % 2 == 0) {
-                return Column(
-                  children: [
-                    Row(
-                      children: [
-                        Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(1.0),
-                              child: Container(
-                                width: 128.5,
-                                height: 128.5,
-                                child: FadeInImage(
-                                  image: NetworkImage(
-                                      "https://source.unsplash.com/random/${index + 1 * 751}"),
-                                  placeholder: NetworkImage(
-                                      "https://source.unsplash.com/random/${index + 1 * 61 * 92}"),
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(1.0),
-                              child: Container(
-                                width: 128.5,
-                                height: 128.5,
-                                child: FadeInImage(
-                                  image: NetworkImage(
-                                      "https://source.unsplash.com/random/${index + 1 * 45 * 2}"),
-                                  placeholder: NetworkImage(
-                                      "https://source.unsplash.com/random/${index + 1 * 32 * 2}"),
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(1.0),
-                          child: Container(
-                            width: 257.0,
-                            height: 257.0,
-                            child: FadeInImage(
-                              image: NetworkImage(
-                                  "https://source.unsplash.com/random/${index + 1 + 25456 * 9}"),
-                              placeholder: NetworkImage(
-                                  "https://source.unsplash.com/random/${index + 1 + 161 - 9}"),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(1.0),
-                          child: Container(
-                            width: 128.5,
-                            height: 128.5,
-                            child: FadeInImage(
-                              image: NetworkImage(
-                                  "https://source.unsplash.com/random/${index + 1 * 652}"),
-                              placeholder: NetworkImage(
-                                  "https://source.unsplash.com/random/${index + 1 * 9}"),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(1.0),
-                          child: Container(
-                            width: 128.5,
-                            height: 128.5,
-                            child: FadeInImage(
-                              image: NetworkImage(
-                                  "https://source.unsplash.com/random/${index + 1 + 716}"),
-                              placeholder: NetworkImage(
-                                  "https://source.unsplash.com/random/${index + 952}"),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(1.0),
-                          child: Container(
-                            width: 128.5,
-                            height: 128.5,
-                            child: FadeInImage(
-                              image: NetworkImage(
-                                  "https://source.unsplash.com/random/${index + 1 * 61}"),
-                              placeholder: NetworkImage(
-                                  "https://source.unsplash.com/random/${index + 58}"),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                );
-              } else {
-                return Container(
-                  child: Column(
+          child: PageStorage(
+            bucket: pageStrBucket,
+            child: GridView.builder(
+              key: pageStrKey,
+              gridDelegate:
+                  SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
+              itemBuilder: (context, index) {
+                if (index % 2 == 0) {
+                  return Column(
                     children: [
                       Row(
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Container(
-                              width: 257.0,
-                              height: 257.0,
-                              child: FadeInImage(
-                                image: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 26845}"),
-                                placeholder: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 1460}"),
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ),
                           Column(
                             children: [
                               Padding(
@@ -256,9 +144,9 @@ class _HotelMyTripPageState extends State<HotelMyTripPage> {
                                   height: 128.5,
                                   child: FadeInImage(
                                     image: NetworkImage(
-                                        "https://source.unsplash.com/random/${index * 7261}"),
+                                        "https://source.unsplash.com/random/${index + 1 * 751}"),
                                     placeholder: NetworkImage(
-                                        "https://source.unsplash.com/random/${index + 95312}"),
+                                        "https://source.unsplash.com/random/${index + 1 * 61 * 92}"),
                                     fit: BoxFit.fill,
                                   ),
                                 ),
@@ -270,14 +158,28 @@ class _HotelMyTripPageState extends State<HotelMyTripPage> {
                                   height: 128.5,
                                   child: FadeInImage(
                                     image: NetworkImage(
-                                        "https://source.unsplash.com/random/${index + 43152}"),
+                                        "https://source.unsplash.com/random/${index + 1 * 45 * 2}"),
                                     placeholder: NetworkImage(
-                                        "https://source.unsplash.com/random/${index + 563132}"),
+                                        "https://source.unsplash.com/random/${index + 1 * 32 * 2}"),
                                     fit: BoxFit.fill,
                                   ),
                                 ),
                               )
                             ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(1.0),
+                            child: Container(
+                              width: 257.0,
+                              height: 257.0,
+                              child: FadeInImage(
+                                image: NetworkImage(
+                                    "https://source.unsplash.com/random/${index + 1 + 25456 * 9}"),
+                                placeholder: NetworkImage(
+                                    "https://source.unsplash.com/random/${index + 1 + 161 - 9}"),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
                           ),
                         ],
                       ),
@@ -290,9 +192,9 @@ class _HotelMyTripPageState extends State<HotelMyTripPage> {
                               height: 128.5,
                               child: FadeInImage(
                                 image: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 78641}"),
+                                    "https://source.unsplash.com/random/${index + 1 * 652}"),
                                 placeholder: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 13592}"),
+                                    "https://source.unsplash.com/random/${index + 1 * 9}"),
                                 fit: BoxFit.fill,
                               ),
                             ),
@@ -304,9 +206,9 @@ class _HotelMyTripPageState extends State<HotelMyTripPage> {
                               height: 128.5,
                               child: FadeInImage(
                                 image: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 8371}"),
+                                    "https://source.unsplash.com/random/${index + 1 + 716}"),
                                 placeholder: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 5692}"),
+                                    "https://source.unsplash.com/random/${index + 952}"),
                                 fit: BoxFit.fill,
                               ),
                             ),
@@ -318,9 +220,9 @@ class _HotelMyTripPageState extends State<HotelMyTripPage> {
                               height: 128.5,
                               child: FadeInImage(
                                 image: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 63471}"),
+                                    "https://source.unsplash.com/random/${index + 1 * 61}"),
                                 placeholder: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 75692}"),
+                                    "https://source.unsplash.com/random/${index + 58}"),
                                 fit: BoxFit.fill,
                               ),
                             ),
@@ -328,11 +230,114 @@ class _HotelMyTripPageState extends State<HotelMyTripPage> {
                         ],
                       ),
                     ],
-                  ),
-                );
-              }
-            },
-            itemCount: 10,
+                  );
+                } else {
+                  return Container(
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(1.0),
+                              child: Container(
+                                width: 257.0,
+                                height: 257.0,
+                                child: FadeInImage(
+                                  image: NetworkImage(
+                                      "https://source.unsplash.com/random/${index + 26845}"),
+                                  placeholder: NetworkImage(
+                                      "https://source.unsplash.com/random/${index + 1460}"),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                            Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(1.0),
+                                  child: Container(
+                                    width: 128.5,
+                                    height: 128.5,
+                                    child: FadeInImage(
+                                      image: NetworkImage(
+                                          "https://source.unsplash.com/random/${index * 7261}"),
+                                      placeholder: NetworkImage(
+                                          "https://source.unsplash.com/random/${index + 95312}"),
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(1.0),
+                                  child: Container(
+                                    width: 128.5,
+                                    height: 128.5,
+                                    child: FadeInImage(
+                                      image: NetworkImage(
+                                          "https://source.unsplash.com/random/${index + 43152}"),
+                                      placeholder: NetworkImage(
+                                          "https://source.unsplash.com/random/${index + 563132}"),
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(1.0),
+                              child: Container(
+                                width: 128.5,
+                                height: 128.5,
+                                child: FadeInImage(
+                                  image: NetworkImage(
+                                      "https://source.unsplash.com/random/${index + 78641}"),
+                                  placeholder: NetworkImage(
+                                      "https://source.unsplash.com/random/${index + 13592}"),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(1.0),
+                              child: Container(
+                                width: 128.5,
+                                height: 128.5,
+                                child: FadeInImage(
+                                  image: NetworkImage(
+                                      "https://source.unsplash.com/random/${index + 8371}"),
+                                  placeholder: NetworkImage(
+                                      "https://source.unsplash.com/random/${index + 5692}"),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(1.0),
+                              child: Container(
+                                width: 128.5,
+                                height: 128.5,
+                                child: FadeInImage(
+                                  image: NetworkImage(
+                                      "https://source.unsplash.com/random/${index + 63471}"),
+                                  placeholder: NetworkImage(
+                                      "https://source.unsplash.com/random/${index + 75692}"),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  );
+                }
+              },
+              itemCount: 10,
+            ),
           ),
         ),
       ],
