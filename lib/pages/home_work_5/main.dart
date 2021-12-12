@@ -16,9 +16,9 @@ class _HomeWorkDars9State extends State<HomeWorkDars9> {
     return Scaffold(
       appBar: AppBar(
         leading: Icon(
-              Icons.menu,
-              size: 30,
-            ),
+          Icons.menu,
+          size: 30,
+        ),
         bottom: PreferredSize(
           child: Container(
             color: Colors.blue.shade900,
@@ -31,7 +31,7 @@ class _HomeWorkDars9State extends State<HomeWorkDars9> {
               width: 200.0,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.search),Text("Search")],
+                children: [Icon(Icons.search), Text("Search")],
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
@@ -58,223 +58,21 @@ class _HomeWorkDars9State extends State<HomeWorkDars9> {
           ],
         ),
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: GridView.builder(
-              gridDelegate:
-                  SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
-              itemBuilder: (context, index) {
-                if (index % 2 == 0) {
-                  return Column(
-                    children: [
-                      Row(
-                        children: [
-                          Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(1.0),
-                                child: Container(
-                                  width: 128.5,
-                                  height: 128.5,
-                                  child: FadeInImage(
-                                    image: NetworkImage(
-                                        "https://source.unsplash.com/random/${index + 1 * 751}"),
-                                    placeholder: NetworkImage(
-                                        "https://source.unsplash.com/random/${index + 1 * 61 * 92}"),
-                                    fit: BoxFit.fill,
-                                  ),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(1.0),
-                                child: Container(
-                                  width: 128.5,
-                                  height: 128.5,
-                                  child: FadeInImage(
-                                    image: NetworkImage(
-                                        "https://source.unsplash.com/random/${index + 1 * 45 * 2}"),
-                                    placeholder: NetworkImage(
-                                        "https://source.unsplash.com/random/${index + 1 * 32 * 2}"),
-                                    fit: BoxFit.fill,
-                                  ),
-                                ),
-                              )
-                            ],
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Container(
-                              width: 257.0,
-                              height: 257.0,
-                              child: FadeInImage(
-                                image: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 1 + 25456 * 9}"),
-                                placeholder: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 1 + 161 - 9}"),
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Container(
-                              width: 128.5,
-                              height: 128.5,
-                              child: FadeInImage(
-                                image: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 1 * 652}"),
-                                placeholder: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 1 * 9}"),
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Container(
-                              width: 128.5,
-                              height: 128.5,
-                              child: FadeInImage(
-                                image: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 1 + 716}"),
-                                placeholder: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 952}"),
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(1.0),
-                            child: Container(
-                              width: 128.5,
-                              height: 128.5,
-                              child: FadeInImage(
-                                image: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 1 * 61}"),
-                                placeholder: NetworkImage(
-                                    "https://source.unsplash.com/random/${index + 58}"),
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  );
-                } else {
-                  return Container(
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(1.0),
-                              child: Container(
-                                width: 257.0,
-                                height: 257.0,
-                                child: FadeInImage(
-                                  image: NetworkImage(
-                                      "https://source.unsplash.com/random/${index + 26845}"),
-                                  placeholder: NetworkImage(
-                                      "https://source.unsplash.com/random/${index + 1460}"),
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Column(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(1.0),
-                                  child: Container(
-                                    width: 128.5,
-                                    height: 128.5,
-                                    child: FadeInImage(
-                                      image: NetworkImage(
-                                          "https://source.unsplash.com/random/${index * 7261}"),
-                                      placeholder: NetworkImage(
-                                          "https://source.unsplash.com/random/${index + 95312}"),
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(1.0),
-                                  child: Container(
-                                    width: 128.5,
-                                    height: 128.5,
-                                    child: FadeInImage(
-                                      image: NetworkImage(
-                                          "https://source.unsplash.com/random/${index + 43152}"),
-                                      placeholder: NetworkImage(
-                                          "https://source.unsplash.com/random/${index + 563132}"),
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(1.0),
-                              child: Container(
-                                width: 128.5,
-                                height: 128.5,
-                                child: FadeInImage(
-                                  image: NetworkImage(
-                                      "https://source.unsplash.com/random/${index + 78641}"),
-                                  placeholder: NetworkImage(
-                                      "https://source.unsplash.com/random/${index + 13592}"),
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(1.0),
-                              child: Container(
-                                width: 128.5,
-                                height: 128.5,
-                                child: FadeInImage(
-                                  image: NetworkImage(
-                                      "https://source.unsplash.com/random/${index + 8371}"),
-                                  placeholder: NetworkImage(
-                                      "https://source.unsplash.com/random/${index + 5692}"),
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(1.0),
-                              child: Container(
-                                width: 128.5,
-                                height: 128.5,
-                                child: FadeInImage(
-                                  image: NetworkImage(
-                                      "https://source.unsplash.com/random/${index + 63471}"),
-                                  placeholder: NetworkImage(
-                                      "https://source.unsplash.com/random/${index + 75692}"),
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  );
-                }
-              },
-              itemCount: 10,
+      body: GridView.builder(
+        gridDelegate:
+            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+        itemBuilder: (context, index) {
+          return Container(
+            height: MediaQuery.of(context).size.height * 50,
+            width: MediaQuery.of(context).size.width * 50,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage('https://source.unsplash.com/random/$index'),
+                fit: BoxFit.cover
+              ),
             ),
-          ),
-        ],
+          );
+        },
       ),
     );
   }

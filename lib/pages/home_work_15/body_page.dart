@@ -76,7 +76,7 @@ class _WaterShopBasketPageState extends State<WaterShopBasketPage> {
   _getOrderedWaterLayout(Water water) => Card(
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-        margin: EdgeInsets.symmetric(horizontal: 16.0, vertical: 6.0),
+        margin: EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
         child: Container(
           alignment: Alignment.centerLeft,
           decoration: _getBoxDecoration(Colors.white, 12.0),

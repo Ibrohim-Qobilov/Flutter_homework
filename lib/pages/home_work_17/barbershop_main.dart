@@ -2,16 +2,6 @@
 import 'package:allhomework/pages/home_work_17/second_page.dart';
 import 'package:flutter/material.dart';
 
-// class BarBerShopMainPage extends StatelessWidget {
-//   const BarBerShopMainPage({ Key? key }) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-
-//     );
-//   }
-// }
 
 class BarBerShopMainPage extends StatefulWidget {
   const BarBerShopMainPage({Key? key}) : super(key: key);

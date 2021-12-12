@@ -162,7 +162,7 @@ class CoursesPage extends StatelessWidget {
                             Text(
                               "Console Development Basics with Unity",
                               style: TextStyle(
-                                  fontSize: 18.0, fontWeight: FontWeight.bold),
+                                  fontSize: 14.0, fontWeight: FontWeight.bold),
                             ),
                           ],
                         ),

@@ -1,7 +1,5 @@
-import 'package:allhomework/pages/car_json/screens/main.dart';
-import 'package:allhomework/pages/furniture_shop/main.dart';
+
 import 'package:allhomework/pages/games/main.dart';
-import 'package:allhomework/pages/home_work_1/pages.dart';
 import 'package:allhomework/pages/home_work_10/main.dart';
 import 'package:allhomework/pages/home_work_11/main_page.dart';
 import 'package:allhomework/pages/home_work_12/screens/main.dart';
@@ -11,61 +9,28 @@ import 'package:allhomework/pages/home_work_15/main.dart';
 import 'package:allhomework/pages/home_work_16/car_shop_main.dart';
 import 'package:allhomework/pages/home_work_17/barbershop_main.dart';
 import 'package:allhomework/pages/home_work_18/screens/splash.dart';
-import 'package:allhomework/pages/home_work_19/botton_nar_bar.dart';
-import 'package:allhomework/pages/home_work_2/login_ui.dart';
 import 'package:allhomework/pages/home_work_20/other.dart';
 import 'package:allhomework/pages/home_work_22/coffeedeliverya.dart';
-import 'package:allhomework/pages/home_work_3/uyga_ui_3.dart';
 import 'package:allhomework/pages/home_work_4/sport/main.dart';
 import 'package:allhomework/pages/home_work_5/main.dart';
 import 'package:allhomework/pages/home_work_6/main.dart';
 import 'package:allhomework/pages/home_work_7/main.dart';
 import 'package:allhomework/pages/home_work_8/main.dart';
 import 'package:allhomework/pages/home_work_9/main.dart';
-import 'package:allhomework/pages/instagram/ui/splash_screen.dart';
 import 'package:allhomework/pages/kema_shop/views/home_page.dart';
-import 'package:allhomework/pages/mario/main.dart';
-import 'package:allhomework/pages/music_ui/pages/music_ui_page.dart';
 import 'package:allhomework/pages/taqvim/screens/bottom_nav_bar.dart';
-import 'package:allhomework/pages/telegram/main.dart';
 import 'package:allhomework/pages/tic_tac_toe/main.dart';
 import 'package:allhomework/pages/valyuta_kurslari/main.dart';
 import 'package:allhomework/pages_info/model/page.dart';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 List<PageUI> pageList = [
-  new PageUI(
-    "Container",
-    "Uy ishi 1",
-    "",
-    "",
-    Icon(CupertinoIcons.grid_circle),
-    HomeWorkBir(),
-    "",
-  ),
-  new PageUI(
-    "Fashion shop",
-    "Uy ishi 2",
-    "03.09.2021",
-    "",
-    Icon(CupertinoIcons.shopping_cart),
-    LoginUi(),
-    "",
-  ),
-  new PageUI(
-    "FW19",
-    "Uy ishi 3",
-    "04.09.2021",
-    "",
-    Icon(CupertinoIcons.shopping_cart),
-    UygaUiPageUch(),
-    "",
-  ),
+  
+  
   new PageUI(
     "Sport",
-    "uy ishi 4",
+    "Amaliy ish 1",
     "05.09.2021",
     "",
     Icon(CupertinoIcons.sportscourt_fill),
@@ -74,7 +39,7 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Sreach images",
-    "Uy ishi 5",
+    "Amaliy ish 2",
     "06.09.2021",
     "",
     Icon(CupertinoIcons.camera_circle),
@@ -83,7 +48,7 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Courses",
-    "Uy ishi 6",
+    "Amaliy ish 3",
     "10.09.2021",
     "",
     Icon(Icons.school_outlined),
@@ -92,7 +57,7 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Foods",
-    "Uy ishi 7",
+    "Amaliy ish 4",
     "13.09.2021",
     "",
     Icon(Icons.food_bank_outlined),
@@ -101,7 +66,7 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Coffee Bar",
-    "Uy ishi 8",
+    "Amaliy ish 5",
     "14-09-2021",
     "",
     Icon(Icons.coffee_outlined),
@@ -110,7 +75,7 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Car ",
-    "Uy ishi 9",
+    "Amaliy ish 6",
     "15.09.2021",
     "",
     Icon(CupertinoIcons.car_detailed),
@@ -119,7 +84,7 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Login Page",
-    "Uy ishi 10",
+    "Amaliy ish 7",
     "16.09.2021",
     "",
     Icon(Icons.email_outlined),
@@ -128,34 +93,26 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Login Page",
-    "Uy ishi 11",
+    "Amaliy ish 8",
     "18.09.2021",
     "",
     Icon(Icons.email_rounded),
     MainPage(),
     "19.09.2021",
   ),
+  
   new PageUI(
-    "Mario",
-    "Uy ishi 12",
-    "20.09.2021",
+    "Car Shop",
+    "Amaliy ish 9",
+    "13-09-2021",
     "",
-    Icon(Icons.games),
-    SuperMarioMainPage(),
-    "",
-  ),
-  new PageUI(
-    "Car shop",
-    "Uy ishi 13",
-    "21-09-2021",
-    "",
-    Icon(CupertinoIcons.car_fill),
+    Icon(Icons.car_rental),
     MainPagePage(),
     "",
   ),
   new PageUI(
     "Order Foods",
-    "Uy ishi 14",
+    "Amaliy ish 10",
     "13-09-2021",
     "",
     Icon(Icons.food_bank_sharp),
@@ -164,7 +121,7 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Find numbers",
-    "Uy ishi 15",
+    "Amaliy ish 11",
     "14.09.2021",
     "",
     Icon(CupertinoIcons.gamecontroller_alt_fill),
@@ -173,43 +130,27 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Water shop",
-    "Uy ishi 16",
+    "Amaliy ish 12",
     "15-09-2021",
     "",
     Icon(Icons.water),
     WaterMainPage(),
     "",
   ),
-  new PageUI(
-    "Instagram",
-    "Uy ishi 17",
-    "15-09-2021",
-    "",
-    Icon(CupertinoIcons.photo_camera),
-    InstagramSplashScreen(),
-    "",
-  ),
+  
   new PageUI(
     "Tesla",
-    "Uy ishi 18",
+    "Amaliy ish 13",
     "21-09-2021",
     "",
     Icon(Icons.car_repair),
     CarShopMain(),
     "",
   ),
-  new PageUI(
-    "Telegram",
-    "Uy ishi 19",
-    "22-09-2021",
-    "",
-    Icon(Icons.car_repair),
-    PlusMessengerMainPage(),
-    "",
-  ),
+  
   new PageUI(
     "Barber shop",
-    "Uy ishi 20",
+    "Amaliy ish 14",
     "23-09-2021",
     "",
     Icon(Icons.shop_outlined),
@@ -218,43 +159,27 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Otel",
-    "Uy ishi 21",
+    "Amaliy ish 15",
     "24-09-2021",
     "",
     Icon(Icons.hotel),
     BookingHotelSplashScreen(),
     "",
   ),
+  
   new PageUI(
     "Chat ",
-    "Uy ishi 22",
-    "27-09-2021",
-    "",
-    Icon(CupertinoIcons.chat_bubble_2_fill),
-    ChatBottomNavigatorBarPage(),
-    "",
-  ),
-  new PageUI(
-    "Chat ",
-    "Uy ishi 23",
+    "Amaliy ish 16",
     "28-09-2021",
     "",
     Icon(CupertinoIcons.chat_bubble_fill),
     OtherPage(),
     "",
   ),
-  new PageUI(
-    "Furniture shop",
-    "Uy ishi 24",
-    "30-09-2021",
-    "",
-    Icon(CupertinoIcons.shopping_cart),
-    FurnitureShopMainPage(),
-    "",
-  ),
+  
   new PageUI(
     "Kema",
-    "Uy ishi 25",
+    "Amaliy ish 17",
     "04-10-2021",
     "",
     Icon(CupertinoIcons.placemark),
@@ -263,7 +188,7 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Coffee",
-    "Uy ishi 26",
+    "Amaliy ish 18",
     "05-10-2021",
     "",
     Icon(CupertinoIcons.placemark),
@@ -272,7 +197,7 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Tic Tac Toe",
-    "Uy ishi 27",
+    "Amaliy ish 19",
     "06-10-2021",
     "",
     Icon(CupertinoIcons.game_controller_solid),
@@ -282,7 +207,7 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "gogo",
-    "Uy ishi 28",
+    "Amaliy ish 20",
     "07-10-2021",
     "",
     Icon(CupertinoIcons.game_controller_solid),
@@ -292,7 +217,7 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Valyuta",
-    "Uy ishi 28",
+    "Amaliy ish 21",
     "07-10-2021",
     "",
     Icon(CupertinoIcons.money_dollar),
@@ -302,7 +227,7 @@ List<PageUI> pageList = [
   ),
   new PageUI(
     "Taqvim",
-    "Uy ishi 29",
+    "Amaliy ish 22",
     "08-10-2021",
     "",
     Icon(Icons.school_sharp),
@@ -310,22 +235,6 @@ List<PageUI> pageList = [
     PrayerBottomNavigatorBarPage(),
     "",
   ),
-  new PageUI(
-    "Music Ui api",
-    "Uy ishi 30",
-    "12-10-2021",
-    "",
-    Icon(Icons.music_note),
-    MusicUIPage(),
-    "",
-  ),
-  new PageUI(
-    "Car api",
-    "uy ishi 31",
-    "14-10-2021",
-    "",
-    Icon(CupertinoIcons.car),
-    CarJson(),
-    "",
-  )
+  
+ 
 ];
