@@ -8,7 +8,7 @@ import 'package:flutter/services.dart';
 class BookingHotelSplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Timer(Duration(seconds: 5), () {
+    Timer(Duration(seconds: 2), () {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (_) => HotelBottonNavBarPage()));
     });

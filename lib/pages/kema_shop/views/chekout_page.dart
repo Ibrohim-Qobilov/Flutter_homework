@@ -150,7 +150,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                 Text(
                                   "\$2000",
                                   style: TextStyle(
-                                    fontSize: 32,
+                                    fontSize: 25,
                                     color: Theme.of(context).buttonColor,
                                   ),
                                 ),

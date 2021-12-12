@@ -86,7 +86,7 @@ class PaymentMethod extends StatelessWidget {
                       Spacer(),
                       Image.asset(
                         "assets/images/kema_shop/mastercard.png",
-                        width: 52,
+                        width: 30,
                       ),
                     ],
                   ),
